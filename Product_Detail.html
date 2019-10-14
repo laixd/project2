@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Slick -->
+  <link type="text/css" rel="stylesheet" href="css/slick.css" />
+  <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+  <!-- nouislider -->
+  <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+
+  <!-- Custom stlylesheet -->
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/rop.css" />
+
+  <!--Owl caroule-->
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
+</head>
+
+<body>
+    <!--top-header-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo caam.png">
+        </a>
+        <div class="collapse navbar-collapse mr-3">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Điện thoại</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Laptop</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Phụ kiện</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline col-lg-12 m-3 my-2 my-lg-0s">
+                <input class="form-control mr-sm-2 col-8" type="search" placeholder="Nhập nội dung tìm kiếm..."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="YourLike.html">Yêu thích</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Giỏ hàng</a>
+                </li>
+                <li class="nav-item">
+                    <!-- trigger modal -->
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalDangky">Đăng ký</a>
+                </li>
+                <li class="nav-item">
+                    <!-- trigger modal -->
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalDangnhap">Đăng nhập</a>
+                </li>
+
+                <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Myacount.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i> User
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                            href="Myacount.html">Tài
+                            khoản của tôi</a>
+                        <div class="dropdown-divider"></div>
+                        <!-- <a class="dropdown-item" href="#">Đơn mua</a> -->
+                        <!-- <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item" href="#">Đăng xuất</a>
+                    </div>
+                </li>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <!-------Login-----------!>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalDangnhap" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="z-index: 10000">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                    <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close"
+                        style="z-index: 100">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Email/Số ĐT/Tên đăng nhập</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mật khẩu</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#exampleModalquenmk"> Quên
+                                mật khẩu
+                                ?</a>
+                        </div>
+
+                    </form>
+                    <div class="model-body-bottom">
+                        <button type="button" class="btn text-white" style="background-color:#EA4335"><i
+                                class="fab fa-google-plus-g"></i> Đăng nhập bằng Gmail</button>
+                        <button type="button" class="btn text-white" style="background-color:#3B5998"><i
+                                class="fab fa-facebook-square"></i> Tiếp tục với Facebook</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-info" data-dismiss="modal" data-toggle="modal"
+                        data-target="#exampleModalDangky">Đăng ký</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Đăng nhập</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------Đăng ký-----------!>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalDangky" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="z-index: 10000">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đăng ký tài khoản</h5>
+                    <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group ">
+                            <input type="text" class="form-control col-8" style="float:left;"
+                                placeholder="Số điện thoại">
+                            <button type="button" class="btn col-4"
+                                style="float: right; background-color:rgb(228, 224, 224)">Gửi mã
+                                xác minh</button>
+                        </div></br><br><br>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nhập mã xác minh"></div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputUsername1"
+                                placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Mật khẩu"></div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"></div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Đồng ý với các điều khoản và
+                                chính sách bảo
+                                mật của Infinity</label>
+                        </div>
+
+                    </form>
+                    <div class="model-body-bottom">
+                        <button type="button" class="btn text-white" style="background-color:#EA4335"><i
+                                class="fab fa-google-plus-g"></i> Đăng ký bằng Gmail</button>
+                        <button type="button" class="btn text-white" style="background-color:#3B5998"><i
+                                class="fab fa-facebook-square"></i> Tiếp tục với Facebook</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info">Đăng ký</button>
+                    <button type="submit" class="btn btn-info" data-dismiss="modal" data-toggle="modal"
+                        data-target="#exampleModalDangnhap">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Quên mật khẩu- -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalquenmk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="z-index: 10000">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Quên mật khẩu</h5>
+                    <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group ">
+                            <input type="text" class="form-control col-8" style="float:left;"
+                                placeholder="Số điện thoại">
+                            <button type="button" class="btn col-4"
+                                style="float: right; background-color:rgb(228, 224, 224)">Gửi mã
+                                xác minh</button>
+                        </div></br><br><br>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nhập mã xác minh"></div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info" data-dismiss="modal" data-toggle="modal"
+                        data-target="#exampleModalmk">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------Đặt lại mật khẩu- -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalmk" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" style="z-index: 10000">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Đặt lại mật khẩu</h5>
+                    <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Mật khẩu"></div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Xác nhận mật khẩu"></div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info" data-dismiss="modal" data-toggle="modal"
+                        data-target="#exampleModalDangnhap">Thay đổi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!--end-top-header-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+      <div class="col-12">
+          <div class="navbar-nav col-lg-12">
+              <a class="nav-item nav-link active" href="index.html">Trang chủ <span
+                      class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="about.html">Giới thiệu</a>
+              <a class="nav-item nav-link" href="#">Tin tức</a>
+              <a class="nav-item nav-link" href="QA.html">Hỏi đáp</a>
+          </div>
+      </div>
+  </nav>
+  <!-- menu -->
+
+
+
+  <!-- body -->
+
+
+
+  <div class="mt-4 container col-12 px-5 ml-2.5">
+    <div class="row">
+      <div class="card col-12 p-0 border-light mb-3">
+        <div class="card-header">
+          <h3>Tên sản phẩm</h3>
+        </div>
+      </div>
+      <div class="container col-12 p-0 m-0">
+        <div class="row col-12 ">
+          <div class=" card col-4 mx-auto ">
+            <div class="product-img">
+              <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-rop" src="img/xiaomi-mi-9-se-blue-18thangbh-400x460.png"
+                      alt="Card image cap">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-rop" src="img/oppo-a9-2020-green-1-400x460.png" alt="Card image cap">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-rop" src="img/xiaomi-redmi-note-7-64gb-trang-docquyen-400x460.png"
+                      alt="Card image cap">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 card p-0">
+              <div class="card-body price-deal p-0">
+                <div class="row">
+                  <h6> 19.000.000 VNĐ</h4>
+                </div>
+                  <div class="row">
+                    <h7> 25.000.000 VNĐ</h5>
+                    <span class="badge badge-danger">Giảm 6.000.000 vnđ</span></h1>
+                </div>
+                <div class="row addtocart-rop">
+                  <button type="button" class="btn btn-danger btn-addtocart-rop col-11">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="row buy-rop">
+                  <div class="col-11 p-0">
+                    <button type="button" class="btn btn-warning btn-buygop-rop col-12">Mua ngay</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card border-light col-12 col-rop p-0">
+              <div class="card-body">
+                <h5 class="card-title">Thông số kỹ thuật</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <span class="col-6">Màn hình :</span>
+                    <span class="col-6" style="float: right">Super AMOLED, 5.97", Full HD+</span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="col-6">Màn hình :</span>
+                    <span class="col-6" style="float: right">Super AMOLED, 5.97", Full HD+</span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="col-6">Màn hình :</span>
+                    <span class="col-6" style="float: right">Super AMOLED, 5.97", Full HD+</span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="col-6">Màn hình :</span>
+                    <span class="col-6" style="float: right">Super AMOLED, 5.97", Full HD+</span>
+                  </li>
+                  <li class="list-group-item">
+                    <span class="col-6">Màn hình :</span>
+                    <span class="col-6" style="float: right">Super AMOLED, 5.97", Full HD+</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row col-12">
+          <div class="card border-light col-6 ">
+            <div class="row">
+              <h5 class="card-title">Đặc điểm nổi bật của Xiaomi Mi 9 SE
+                Tìm hiểu thêm
+                Bộ sản phẩm chuẩn: Hộp, Sạc, Sách hướng dẫn, Cáp, Cây lấy sim, Ốp lưng, Cáp chuyển đổi
+                Vẫn như thường lệ thì bên cạnh chiếc flagship Xiaomi Mi 9 cao cấp của mình thì Xiaomi
+                cũng giới thiệu thêm phiên bản rút gọn là chiếc Xiaomi Mi 9 SE. Máy vẫn sở hữu cho mình
+                nhiều trang bị cao cấp tương tự đàn anh.</h5>
+              <div class="card-body">
+                <div class="product-description">
+                  <h5 class="card-title">Đặc điểm nổi bật của Xiaomi Mi 9 SE</h5>
+                  <img class="col-12" src="img/xiaomi-mi-9-se-tgdd-9.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="row container">
+
+            </div>
+          </div>
+          <div class="card border-light col-6 ">
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              <div class="row">
+                <div class="col-md-12">
+                  <h5>Overall Rating</h5>
+                </div>
+                <div class="col-md-6 text-warning">
+                  <i class="fa fa-star rating-light"></i><i class="fa fa-star rating-yelow"></i><i
+                    class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </div>
+                <div class="col-md-12">
+                  <button type="button" class="btn btn-primary">Write Reviews</button>
+                </div>
+
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="comment container">
+                  <div class="card comment-item row">
+                    <div class="comment-user border-bottom row">
+                      <img class="comment-item-image-user" src="img/Person-Male-Light-icon.png" alt="">
+                      <span class="comment-item-user">Trần được</span>
+                    </div>
+                    <div class="card-body comment-body">
+                      <p>Sản phẩm rất ok nhưng hơi đắt</p>
+                    </div>
+
+                    <div class="childrens-comment">
+                      <div class="comment-item row">
+                        <img class="comment-item-image" src="" alt="">
+                        <p class="comment-item-text">
+
+                          <img class="comment-item-text-img" src="" alt="">
+                        </p>
+                        <div class="comment-item row">
+                          <img class="comment-item-image" src="" alt="">
+                          <p class="comment-item-text">
+
+                            <img class="comment-item-text-img" src="" alt="">
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!--/body-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 star-light">Liên hệ</h5>
+                    <ul class="footer-links">
+                        <a class="page-footer" href="#"><i class="fa fa-map-marker mr-2 star-foot"></i>242 Tôn
+                            Đản</a></br>
+                        <a class="page-footer" href="#"><i class="fa fa-phone mr-2 star-foot"></i>+021-95-51-84</a></br>
+                        <a class="page-footer" href="#"><i
+                                class="far fa-envelope mr-2 star-foot"></i>email@email.com</a>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Danh mục</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Giảm giá</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Laptop</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Điện thoại</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Phụ kiện</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Thông tin</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Infinity shop</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Liên hệ với chúng tôi</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Chính sách bảo mật</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Đổi trả hàng hóa</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Dịch vụ</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Tài khoản</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Xem giỏ hàng</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Xem yêu thích</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Đơn hàng của tôi</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-twitter "> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-linkedin-in"> </i>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-youtube"></i>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href=""> INFINITYShop.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+</body>
+
+</html>
