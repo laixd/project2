@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ad-Hãng sản xuất</title>
+    <link href="Admin/sidebar.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Admin/style-admin.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/686e38e854.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="logo"><a href="Index.html">
+                        <span>Infinity Shop</span></a></div>
+                <ul>
+                    <li><a href="Admin.html"><i class="fas fa-home"></i> Tổng quan </a>
+                    </li>
+
+                    <li><a href="Ad-produc.html" class=""><i class="fas fa-shopping-cart"></i>Sản phẩm</a>
+                        <!-- <ul>
+                            <li><a href="Ad-produc.html">Nhập hàng</a></li>
+                            <li><a href="Ad-produc.html">Điều chỉnh, giảm giá</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="Ad-hangSX.html"><i class="fas fa-handshake"></i>Nhà sản xuất</a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-newspaper"></i>Tin tức, bài viết<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Tạo bài viết mới</a></li>
+                            <li><a href="">Tổng hợp bài viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-user-friends"></i>Quản lý nhân viên
+                            <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-chart-bar"></i>Báo cáo<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Báo cáo doanh thu</a></li>
+                            <li><a href="">..</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Feedback.html"><i class="fas fa-comments"></i>Phản hồi đánh giá<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+
+                        <ul>
+
+                            <li class="header-icon dib"><i class="fas fa-street-view"
+                                    title="Xem với tư cách khách hàng"></i>
+                            </li>
+                            <li class="header-icon dib"><i class="fas fa-bell" title="Thông báo mới"></i>
+                            </li>
+                            <li class="header-icon dib"><span class="user-avatar">Admin <i
+                                        class="fas fa-sort-down"></i></span>
+                                <div class="drop-down dropdown-profile">
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-user"></i> <span>Tài khoản của
+                                                        tôi</span></a></li>
+                                            <li><a href="#"><i class="fas fa-cogs"></i> <span>Cài đặt</span></a></li>
+                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Đăng
+                                                        xuất</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu-container -->
+    <div class="clear"></div>
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <!-- /# row -->
+
+                <div class="ad-hangsx">
+                    <div class="title col-12">
+                        <h5>Nhà sản xuất</h5>
+                    </div>
+                    <form>
+                        <div class="form-group row col-12">
+                            <label class="col-2 col-form-label" style="text-align: right;">Nhà sản xuất </label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="button" class="btn btn-success"><i class="fas fa-plus"></i> Thêm</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="clear"></div>
+                    <div class="ad-hangsx-body row col-12 ">
+
+
+                            <div class="table-hsx col-12">
+
+                                    <!-- <div class="card-body"> -->
+                                        <div id="table" class="table-editable">
+                                            <table class="table table-bordered ">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width: 10%;" >STT</th>
+                                                        <th  style="width: 60%;">Nhà sản xuất</th>
+                                                        <th style="width: 10%;"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="pt-3-half" contenteditable="true">1</td>
+                                                        <td class="pt-3-half" contenteditable="true">SamSung</td>
+
+                                                        <td>
+                                                                <button type="button" class="btn btn-danger"><i
+                                                                    class="fas fa-user-minus"></i></button>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- This is our clonable table line -->
+                                                    <tr>
+                                                            <td class="pt-3-half" contenteditable="true">2</td>
+                                                            <td class="pt-3-half" contenteditable="true">Apple</td>
+    
+                                                            <td>
+                                                                    <button type="button" class="btn btn-danger"><i
+                                                                        class="fas fa-user-minus"></i></button>
+                                                            </td>
+                                                        </tr>
+
+                                                    <!-- This is our clonable table line -->
+                                                    <tr>
+                                                            <td class="pt-3-half" contenteditable="true">3</td>
+                                                            <td class="pt-3-half" contenteditable="true">Lenovo</td>
+    
+                                                            <td>
+                                                                    <button type="button" class="btn btn-danger"><i
+                                                                        class="fas fa-user-minus"></i></button>
+                                                            </td>
+                                                        </tr>
+                                                </tbody>
+                                            </table>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+
+
+                        <!-- <table class="table-editable">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Nhà sản xuất</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>SamSung</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info"><i
+                                                class="fas fa-user-minus"></i></button>
+                                        <button type="button" class="btn btn-outline-danger"><i
+                                                class="fas fa-user-minus"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>Apple</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info"><i
+                                                class="fas fa-user-minus"></i></button>
+                                        <button type="button" class="btn btn-outline-danger"><i
+                                                class="fas fa-user-minus"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>Lenovo</td>
+                                    <td>
+                                        <button type="button" class="btn btn-outline-info"><i
+                                                class="fas fa-user-minus"></i></button>
+                                        <button type="button" class="btn btn-outline-danger"><i
+                                                class="fas fa-user-minus"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jquery vendor -->
+    <script src="js/jquery.min.js"></script>
+    <script src="admin/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="Admin/sidebar.js"></script>
+    <!-- sidebar -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Admin/scripts.js"></script>
+
+</body>
+
+</html>

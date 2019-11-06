@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ad-Employees</title>
+    <link href="Admin/sidebar.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Admin/style-admin.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/686e38e854.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="logo"><a href="Index.html">
+                        <span>Infinity Shop</span></a></div>
+                <ul>
+                    <li><a href="Admin.html"><i class="fas fa-home"></i> Tổng quan </a>
+                    </li>
+
+                    <li><a href="Ad-produc.html" class=""><i class="fas fa-shopping-cart"></i>Sản phẩm</a>
+                    </li>
+                    <li><a href="Ad-hangSX.html"><i class="fas fa-handshake"></i>Nhà sản xuất<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-newspaper"></i>Tin tức, bài viết<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Tạo bài viết mới</a></li>
+                            <li><a href="">Tổng hợp bài viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Ad-Employees.html"><i class="fas fa-user-friends"></i>Quản lý nhân viên
+                            <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-chart-bar"></i>Báo cáo<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Báo cáo doanh thu</a></li>
+                            <li><a href="">..</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Feedback.html"><i class="fas fa-comments"></i>Phản hồi đánh giá<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+
+                        <ul>
+
+                            <li class="header-icon dib"><i class="fas fa-street-view"
+                                    title="Xem với tư cách khách hàng"></i>
+                            </li>
+                            <li class="header-icon dib"><i class="fas fa-bell" title="Thông báo mới"></i>
+                            </li>
+                            <li class="header-icon dib"><span class="user-avatar">Admin <i
+                                        class="fas fa-sort-down"></i></span>
+                                <div class="drop-down dropdown-profile">
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-user"></i> <span>Tài khoản của
+                                                        tôi</span></a></li>
+                                            <li><a href="#"><i class="fas fa-cogs"></i> <span>Cài đặt</span></a></li>
+                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Đăng
+                                                        xuất</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu-container -->
+    <div class="clear"></div>
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <!-- /# row -->
+                <div class="ad-employees">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Thêm mới</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Tài khoản của bạn</a>
+                        </li>
+
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- begin Thêm mới -->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="ad-employees-new">
+                                <!-- begin thêm -->
+                                <div class="border">
+                                    <div class="title col-12">
+                                        <h5>Thêm nhân viên </h5>
+                                    </div>
+                                    <div class="body-employees col-12">
+                                        <div class="body-employees-left col-9" style="float: left">
+                                            <form>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Mã nhân viên (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Họ (<span class="note">*</span>)
+                                                        : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Tên (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Email: </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Số điện thoại (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Địa chỉ: (<span
+                                                            class="note">*</span>) </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea type="text" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Giới tính: </label>
+                                                    <div class="col-sm-9">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio1"
+                                                                value="option1">
+                                                            Nam
+
+                                                        </div>
+                                                        <div class="form-check form-check-inline"
+                                                            style="margin-left: 30px;">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio2"
+                                                                value="option2">
+                                                            Nữ
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Ngày sinh: </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="body-employees-right col-3 " style="float: right">
+                                            <img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
+                                            <p id="profile-name" class="profile-name-card">Lài Cute</p>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <div class="ht">
+                                            <button type="reset" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hủy</button>
+                                            <button type="submit" class="btn btn-info"><i class="fas fa-save"></i> Hoàn
+                                                thành</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- begin danh sách -->
+                  
+                                <div class="clear"></div>
+                                <div class="border">
+                                    <div class="title col-12">
+                                        <h5>Tất cả nhân viên </h5>
+                                    </div>
+                                    <div class="body-employees-list col-11">
+                                        <table class="table table-bordered table-hover " style="text-align: center;">
+                                            <thead class="thead-light">
+                                              <tr>
+                                                <th scope="col" style="width:5%">STT</th>
+                                                <th scope="col" style="width:20%" >Ảnh</th>
+                                                <th scope="col" style="width:20%">Họ và tên</th>
+                                                <th scope="col" style="width:20%">Số ĐT</th>
+                                                <th scope="col" style="width:20%">Tên đăng nhập</th>
+                                                <th scope="col" style="width:15%">Mật khẩu</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td><img src="img/avatar_user.png" alt="Sản phẩm 1" class="img-responsive"
+                                                    width="100"></td>
+                                                <td>Nguyễn Thị Lài</td>
+                                                <td>0972 649 403</td>
+                                                <td>laicute</td>
+                                                <td >12345678 (làm cái mắt ẩn hiện mật khẩu)  </td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td><img src="img/avatar_user.png" alt="Sản phẩm 1" class="img-responsive"
+                                                    width="100"></td>
+                                                <td>Nguyễn Thị Lài</td>
+                                                <td>0972 649 403</td>
+                                                <td>laicute</td>
+                                                <td>12345678</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td><img src="img/avatar_user.png" alt="Sản phẩm 1" class="img-responsive"
+                                                    width="100"></td>
+                                                <td>Nguyễn Thị Lài</td>
+                                                <td>0972 649 403</td>
+                                                <td>laicute</td>
+                                                <td>12345678</td>
+                                              </tr>
+                                            
+                                            </tbody>
+                                          </table>
+                                       
+
+                                        <div class="clear"></div>
+                                       
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <!-- begin giảm giá -->
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="ad-employees-acount">
+                                <div class=" border">
+                                    <div class="title col-12">
+                                        <h5>Thông tin tài khoản</h5>
+                                    </div>
+                                    <div class="body-employees col-12">
+                                        <div class="body-employees-left col-9" style="float: left">
+                                            <form>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Mã nhân viên (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Mật khẩu (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="password" class="form-control col-11"
+                                                            style="float: left;">
+                                                        <button type="button" class="btn btn-outline-light col-1"
+                                                            style="float: left;" title="Thay đổi mật khẩu"><i class="fas fa-edit"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Họ (<span class="note">*</span>)
+                                                        : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Tên (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Email: </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Số điện thoại (<span
+                                                            class="note">*</span>) : </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" minlength="2"
+                                                            minlength="120">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Địa chỉ: (<span
+                                                            class="note">*</span>) </label>
+                                                    <div class="col-sm-9">
+                                                        <textarea type="text" class="form-control"></textarea>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Giới tính: </label>
+                                                    <div class="col-sm-9">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio1"
+                                                                value="option1">
+                                                            Nam
+
+                                                        </div>
+                                                        <div class="form-check form-check-inline"
+                                                            style="margin-left: 30px;">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="inlineRadioOptions" id="inlineRadio2"
+                                                                value="option2">
+                                                            Nữ
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row col-12">
+                                                    <label class="col-3 col-form-label">Ngày sinh: </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="date" class="form-control">
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="body-employees-right col-3 " style="float: right">
+                                            <img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
+                                            <p id="profile-name" class="profile-name-card">Lài Cute</p>
+                                        </div>
+
+                                        <div class="clear"></div>
+                                        <div class="ht">
+                                            <button type="reset" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                                Hủy</button>
+                                            <button type="submit" class="btn btn-info"><i class="fas fa-save"></i> Cập
+                                                nhật</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery vendor -->
+    <script src="js/jquery.min.js"></script>
+    <script src="admin/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="Admin/sidebar.js"></script>
+    <!-- sidebar -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Admin/scripts.js"></script>
+
+</body>
+
+</html>

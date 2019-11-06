@@ -5,23 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login</title>
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
     <!-- Custom stlylesheet -->
-    <link type="text/css" rel="stylesheet" href="css/lai.css" />
+    <link type="text/css" rel="stylesheet" href="css/Login.css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <!--top-header-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo caam.png">
+        </a>
+        <div class="collapse navbar-collapse mr-3">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Danh mục
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Điện thoại</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Laptop</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Phụ kiện</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline col-lg-12 m-3 my-2 my-lg-0s">
+                <input class="form-control mr-sm-2 col-8" type="search" placeholder="Nhập nội dung tìm kiếm..."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+            </form>
+        </div>
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Giỏ hàng</a>
+                </li>
+                <li class="nav-item">
+                    <!-- trigger modal -->
+                    <a class="nav-link" href="Registration.html">Đăng ký</a>
+                </li>
+                <li class="nav-item">
+                    <!-- trigger modal -->
+                    <a class="nav-link" href="Login.html">Đăng nhập</a>
+                </li>
+
+                <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i> User
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="Myacount.html">Tài khoản của tôi</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Đăng xuất</a>
+                    </div>
+                </li>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <!--end-top-header-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+        <div class="col-12">
+            <div class="navbar-nav col-lg-12">
+                <a class="nav-item nav-link active" href="index.html">Trang chủ <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">Giới thiệu</a>
+                <a class="nav-item nav-link" href="">Tin tức</a>
+                <a class="nav-item nav-link" href="QA.html">Hỏi đáp</a>
+            </div>
+        </div>
+    </nav>
     <!-- body -->
     <div class="container">
         <div class="card card-container">
             <h4 style="text-align: center;">Đăng nhập</h4>
             <img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
-            <p id="profile-name" class="profile-name-card"></p>
+            <!-- <p id="profile-name" class="profile-name-card"></p> -->
             <form class="form-signin">
-                <span id="reauth-email" class="reauth-email"></span>
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email/Số ĐT" required
                     autofocus><br>
                 <input type="password" id="inputPassword" class="form-control" placeholder="Mật khẩu" required>
@@ -33,16 +114,158 @@
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Đăng nhập</button>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Đăng ký</button>
             </form><!-- /form -->
-            <a href="#" class="forgot-password" >
+            <a href="#" class="forgot-password">
                 Quên mật khẩu?
             </a>
-            
+
         </div><!-- /card-container -->
     </div>
+
     <!--/body-->
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 star-light">Liên hệ</h5>
+                    <ul class="footer-links">
+                        <a class="page-footer" href="#"><i class="fa fa-map-marker mr-2 star-foot"></i>242 Tôn
+                            Đản</a></br>
+                        <a class="page-footer" href="#"><i class="fa fa-phone mr-2 star-foot"></i>+021-95-51-84</a></br>
+                        <a class="page-footer" href="#"><i
+                                class="far fa-envelope mr-2 star-foot"></i>email@email.com</a>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Danh mục</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Giảm giá</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Laptop</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Điện thoại</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Phụ kiện</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Thông tin</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Infinity shop</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Liên hệ với chúng tôi</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Chính sách bảo mật</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Đổi trả hàng hóa</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Dịch vụ</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="page-footer" href="#!">Tài khoản</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Xem giỏ hàng</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Xem yêu thích</a>
+                        </li>
+                        <li>
+                            <a class="page-footer" href="#!">Đơn hàng của tôi</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-twitter "> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-linkedin-in"> </i>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-youtube"></i>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href=""> INFINITYShop.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
 </body>
 
 </html>

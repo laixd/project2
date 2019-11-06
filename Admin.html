@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- <script src="js/Chart.min.js"></script> -->
     <link href="Admin/sidebar.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="Admin/style.css" rel="stylesheet">
+    <link href="Admin/style-admin.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/686e38e854.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script type="text/javascript" src="Admin/charts.loader.js"></script>
 </head>
 
 <body>
@@ -21,28 +22,21 @@
                 <div class="logo"><a href="Index.html">
                         <!-- <img src="assets/images/logo.png" alt="" /> --><span>Infinity Shop</span></a></div>
                 <ul>
-                    <li class="active"><a class="sidebar-sub-toggle"><i class="fas fa-home"></i> Tổng quan </a>
+                    <li ><a href="Admin.html" ><i class="fas fa-home"></i> Tổng quan </a>
                     </li>
 
-                    <li><a class="sidebar-sub-toggle"><i class="fas fa-shopping-cart"></i>Sản phẩm<span
-                                class="sidebar-collapse-icon ti-angle-down"></span></a>
-                        <ul>
-                            <li><a href="">Nhập hàng</a></li>
-                            <li><a href="">Điều chỉnh, giảm giá</a></li>
-
-                        </ul>
-                    </li>
-                    
-                    <!-- <li><a class="sidebar-sub-toggle"><i class="fas fa-shopping-cart"></i>Danh mục<span
-                                class="sidebar-collapse-icon ti-angle-down"></span></a>
-                    </li> -->
-
-                    <li><a class="sidebar-sub-toggle"><i class="fas fa-handshake"></i>Hãng sản xuất<span
-                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    <li><a href="Ad-produc.html" ><i class="fas fa-shopping-cart"></i>Sản phẩm</a>
                         <!-- <ul>
-                            <li><a href="">Hãng sản xuất</a></li>
-                            <li><a href="">Khách hàng</a></li>
+                            <li><a href="Ad-produc.html">Nhập hàng</a></li>
+                            <li><a href="Ad-produc.html">Điều chỉnh, giảm giá</a></li>
+                            
                         </ul> -->
+
+                        
+                    </li>
+                   
+
+                    <li><a href="Ad-hangSX.html" ><i class="fas fa-handshake"></i>Nhà sản xuất</a>
                     </li>
                     <li><a class="sidebar-sub-toggle"><i class="fas fa-newspaper"></i>Tin tức, bài viết<span
                                 class="sidebar-collapse-icon ti-angle-down"></span></a>
@@ -51,12 +45,8 @@
                             <li><a href="">Tổng hợp bài viết</a></li>
                         </ul>
                     </li>
-                    <li><a class="sidebar-sub-toggle"><i class="fas fa-user-friends"></i>Quản lý nhân viên
+                    <li><a ><i class="fas fa-user-friends"></i>Quản lý nhân viên
                             <span class="sidebar-collapse-icon ti-angle-down"></span></a>
-                        <!-- <ul>
-                            <li><a href="">Quản lý nhân viên</a></li>
-                            <li><a href="">Tài khoản của tôi</a></li>
-                        </ul> -->
                     </li>
                     <li><a class="sidebar-sub-toggle"><i class="fas fa-chart-bar"></i>Báo cáo<span
                                 class="sidebar-collapse-icon ti-angle-down"></span></a>
@@ -181,11 +171,8 @@
                 <div class="clear"></div>
                 <div class="chart">
                     <div class="chart-title">
-                        <h5>Tổng doanh thu qua các năm</h5>
-                    </div>
-                    <div class="chart-body row col-12">
-                        <!-- column -->
-                        <canvas id="canvas" height="450" width="600"></canvas>
+                        <h5>Tổng doanh thu qua các tháng 2019</h5><br>
+                        <div id="myChart" style="width: 100%; height: 500px;"></div>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -240,21 +227,25 @@
         </div>
     </div>
 
-
-<script>
-var myBarChart = new Chart(document.getElementById("canvas").getContext("2d")).Bar(BarChart, {scaleFontSize: 14, scaleFontColor: "#ff8540"});
-var BarChart = {
-    labels: ["Ruby", "jQuery", "Java", "ASP.Net", "PHP"],
-    datasets: [{
-        fillColor: "rgba(151,249,190,0.5)",
-        strokeColor: "rgba(255,255,255,1)",
-        data: [13, 20, 30, 40, 50]
-    }, {
-        fillColor: "rgba(252,147,65,0.5)",
-        strokeColor: "rgba(255,255,255,1)",
-        data: [28, 68, 40, 19, 96]
-    }]
-}</script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['bar']});
+        google.charts.setOnLoadCallback(drawChart);
+  
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['', 'Điện thoại', 'Laptop', 'Phụ kiện'],
+            ['Tháng 6', 1000, 400, 200],
+            ['Tháng 7', 1170, 460, 250],
+            ['Tháng 8', 660, 1120, 300],
+            ['Tháng 9', 1030, 540, 350],
+            ['Tháng 10', 660, 2120, 300],
+            ['Tháng 11', 0, 0, 0],
+            ['Tháng 12', 0, 0, 0]
+          ]);
+          var chart = new google.charts.Bar(document.getElementById('myChart'));
+          chart.draw(data, google.charts.Bar);
+        }
+      </script>
 
     <!-- jquery vendor -->
     <script src="js/jquery.min.js"></script>
@@ -264,7 +255,7 @@ var BarChart = {
     <!-- sidebar -->
     <script src="js/bootstrap.min.js"></script>
     <script src="Admin/scripts.js"></script>
-    <script src="js/Chart.min.js"></script>
+  
 
 </body>
 

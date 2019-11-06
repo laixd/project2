@@ -5,22 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+
+    <title>My Acount</title>
+
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-
-    <!-- Slick -->
-    <link type="text/css" rel="stylesheet" href="css/slick.css" />
-    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
-
-    <!-- nouislider -->
-    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
-
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="css/fontawesome.min.css">
 
-    <!-- Custom stlylesheet -->
+    <script src="https://kit.fontawesome.com/686e38e854.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/MyAcount.css" />
 </head>
 
 <body>
@@ -61,9 +56,6 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <li class="nav-item">
-                    <a class="nav-link" href="YourLike.html">Yêu thích</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="cart.html">Giỏ hàng</a>
                 </li>
                 <li class="nav-item">
@@ -86,8 +78,6 @@
                             href="Myacount.html">Tài
                             khoản của tôi</a>
                         <div class="dropdown-divider"></div>
-                        <!-- <a class="dropdown-item" href="#">Đơn mua</a> -->
-                        <!-- <div class="dropdown-divider"></div> -->
                         <a class="dropdown-item" href="#">Đăng xuất</a>
                     </div>
                 </li>
@@ -112,8 +102,8 @@
         </div>
     </nav>
     <!-- body --><br>
-    <div class="row">
-        <div class="col-3">
+    <div class="container ">
+        <div class="col-3" style="float: left;">
             <div class="card-header tab-content-left">
                 <div class="nav flex-column nav-pills  " id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
@@ -127,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-9">
+        <div class="col-9" style="float: left;">
             <div class="tab-content" id="v-pills-tabContent">
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                     aria-labelledby="v-pills-home-tab">
@@ -138,10 +128,14 @@
                                 <h6>Quản lý thông tin hồ sơ để bảo mật tài khoản </h6>
                             </div>
                             <div class="container col-12 "><br>
-                                <div class="col-7" style="float: left">
+                                <div class="col-8" style="float: left">
                                     <form>
                                         <div class="form-group ">
-                                            <label>Họ và tên: </label>
+                                            <label>Họ: </label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group ">
+                                            <label>Tên: </label>
                                             <input type="text" class="form-control">
                                         </div>
                                         <div class="form-group ">
@@ -175,21 +169,16 @@
                                             <input type="date" class="form-control">
                                         </div>
                                         <button type="submit" class="btn btn-info"
-                                            style="text-align: right">Lưu</button>
+                                            style="text-align: center">Lưu</button>
                                         </br><br>
-
+                                       
 
                                     </form>
                                 </div>
 
                                 <div class="col-4" style="float: right"><br><br>
-                                    <div class="avatar-uploader__avatar">
-                                        <img class="avatar-uploader__avatar-image" /></br>
-                                        <input type="file" accept=".jpg,.jpeg,.png"></br></br>
-                                        <input type="file" accept=".jpg,.jpeg,.png" <img style="z-index: 100000"
-                                            class="avatar-uploader__avatar-image" />
-                                    </div><br>
-
+                                    <img id="profile-img" class="profile-img-card" src="img/avatar_2x.png" />
+                                    <p id="profile-name" class="profile-name-card">Lài Cute</p>
 
                                 </div><br><br>
 
@@ -209,10 +198,10 @@
                                 <table id="cart" class="table table-hover table-condensed">
                                     <thead>
                                         <tr>
-                                            <th style="width:45%">Sản phẩm</th>
-                                            <th style="width:15%">Tổng số lượng</th>
+                                            <th style="width:45%">Hóa đơn</th>
+                                            <th style="width:12%">Số lượng</th>
                                             <th style="width:30%" class="text-center">Thành tiền</th>
-                                            <th style="width:12%"> </th>
+                                            <th style="width:15%"> </th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -231,11 +220,11 @@
                                             <td data-th="Quantity" class="text-center">4
                                                 <!-- <input class="form-control text-center" value="1" type="number"> -->
                                             </td>
-                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000.000.000 <span style="color:darkgrey"> Vnđ</span></td>
+                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">
+                                                200.000.000.000 <span style="color:darkgrey"> Vnđ</span></td>
                                             <td class="actions" data-th="">
-                                                <button class="btn btn-info" title="Xem hóa đơn chi tiết"><i
-                                                        class="fa fa-eye"></i>
-                                                </button>
+                                                <button class="btn btn-info" title="Xem hóa đơn chi tiết"><i class="fas fa-eye"></i>
+                                                     </button>
                                             </td>
                                         </tr>
 
@@ -291,7 +280,8 @@
                                             <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
                                             <td data-th="Quantity" class="text-center">1
                                             </td>
-                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">
+                                                200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
                                             <td class="actions" data-th="">
                                                 <button class="btn btn-info" title="Xem chi tiết"><i
                                                         class="fa fa-eye"></i>
@@ -300,83 +290,87 @@
                                         </tr>
 
                                         <tr>
-                                                <td data-th="Id" class="text-center">Mo2
-                                                </td>
-                                                <td data-th="Product">
-                                                    <div class="row">
-                                                        <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
-                                                                alt="Sản phẩm 1" class="img-responsive" width="100">
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <h5 class="nomargin">Tai nghe</h5>
-                                                            <p>Mô tả sản phẩm</p>
-                                                        </div>
+                                            <td data-th="Id" class="text-center">Mo2
+                                            </td>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
+                                                            alt="Sản phẩm 1" class="img-responsive" width="100">
                                                     </div>
-                                                </td>
-                                                <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                <td data-th="Quantity" class="text-center">1
-                                                </td>
-                                                <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                <td class="actions" data-th="">
-                                                    <button class="btn btn-info" title="Xem chi tiết"><i
-                                                            class="fa fa-eye"></i>
-                                                    </button>
-                                                </td>
-                                            </tr>
+                                                    <div class="col-sm-9">
+                                                        <h5 class="nomargin">Tai nghe</h5>
+                                                        <p>Mô tả sản phẩm</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td data-th="Quantity" class="text-center">1
+                                            </td>
+                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">
+                                                200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td class="actions" data-th="">
+                                                <button class="btn btn-info" title="Xem chi tiết"><i
+                                                        class="fa fa-eye"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
 
-                                            <tr>
-                                                    <td data-th="Id" class="text-center">Mo1
-                                                    </td>
-                                                    <td data-th="Product">
-                                                        <div class="row">
-                                                            <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
-                                                                    alt="Sản phẩm 1" class="img-responsive" width="100">
-                                                            </div>
-                                                            <div class="col-sm-9">
-                                                                <h5 class="nomargin">Tai nghe</h5>
-                                                                <p>Mô tả sản phẩm</p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                    <td data-th="Quantity" class="text-center">1
-                                                    </td>
-                                                    <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                    <td class="actions" data-th="">
-                                                        <button class="btn btn-info" title="Xem chi tiết"><i
-                                                                class="fa fa-eye"></i>
-                                                        </button>
-                                                    </td>
-                                                </tr>
+                                        <tr>
+                                            <td data-th="Id" class="text-center">Mo1
+                                            </td>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
+                                                            alt="Sản phẩm 1" class="img-responsive" width="100">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <h5 class="nomargin">Tai nghe</h5>
+                                                        <p>Mô tả sản phẩm</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td data-th="Quantity" class="text-center">1
+                                            </td>
+                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">
+                                                200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td class="actions" data-th="">
+                                                <button class="btn btn-info" title="Xem chi tiết"><i
+                                                        class="fa fa-eye"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
 
-                                                <tr>
-                                                        <td data-th="Id" class="text-center">Mo1
-                                                        </td>
-                                                        <td data-th="Product">
-                                                            <div class="row">
-                                                                <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
-                                                                        alt="Sản phẩm 1" class="img-responsive" width="100">
-                                                                </div>
-                                                                <div class="col-sm-9">
-                                                                    <h5 class="nomargin">Tai nghe</h5>
-                                                                    <p>Mô tả sản phẩm</p>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                        <td data-th="Quantity" class="text-center">1
-                                                        </td>
-                                                        <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
-                                                        <td class="actions" data-th="">
-                                                            <button class="btn btn-info" title="Xem chi tiết"><i
-                                                                    class="fa fa-eye"></i>
-                                                            </button>
-                                                        </td>
-                                                    </tr>
+                                        <tr>
+                                            <td data-th="Id" class="text-center">Mo1
+                                            </td>
+                                            <td data-th="Product">
+                                                <div class="row">
+                                                    <div class="col-sm-3 hidden-xs"><img src="img/product02.png"
+                                                            alt="Sản phẩm 1" class="img-responsive" width="100">
+                                                    </div>
+                                                    <div class="col-sm-9">
+                                                        <h5 class="nomargin">Tai nghe</h5>
+                                                        <p>Mô tả sản phẩm</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-th="Price">200.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td data-th="Quantity" class="text-center">1
+                                            </td>
+                                            <td data-th="Subtotal" style="text-align: center; color: #EA4335">
+                                                200.000.000.000<span style="color:darkgrey"> Vnđ</span></td>
+                                            <td class="actions" data-th="">
+                                                <button class="btn btn-info" title="Xem chi tiết"><i
+                                                        class="fa fa-eye"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
 
                                     </tbody>
                                     <tfoot>
-                                        <tr><td></td>
+                                        <tr>
+                                            <td></td>
                                             <td><a href="index.html" class="btn btn-warning"><i
                                                         class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
                                             </td>
@@ -427,7 +421,7 @@
     <!-- </div>
     </div> -->
     <!--/body-->
-
+    <div class="clear"></div>
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
 
@@ -568,8 +562,8 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="/js/all.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <!-- <script src="/js/all.min.js"></script> -->
 
 </body>
 
