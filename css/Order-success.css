@@ -1,0 +1,11 @@
+.billSuccess{
+
+    color: #EA4335;
+    font-size: larger;
+  }
+  .billOrderSuccess{
+    color: #EA4335;
+    font-size: larger; 
+    font-weight: bolder; 
+    font-style: initial;
+  }

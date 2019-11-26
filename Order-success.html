@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Buy</title>
+    <title>Order-Success</title>
     <!-- Bootstrap -->
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 
@@ -21,6 +21,7 @@
 
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/Order-success.css" />
 </head>
 
 <body>
@@ -116,35 +117,25 @@
         <div class="row mt-5">
             <div class="card col-12 p-0">
                 <div class="card-header">
-                    <h3 style="color: #EA4335; font-family: 'Courier New', Courier, monospace;">Infinity Shop | Thanh
-                        toán</h3>
+                    <h3 style="color: #EA4335; font-family: 'Courier New', Courier, monospace;">Infinity Shop | Chờ nhận
+                        hàng</h3>
                 </div>
-
 
                 <div class="container col-12">
                     <div class="cart-addr">
-                        
-                        <h5><i class="fas fa-map-marker-alt text-danger"></i> Địa chỉ nhận hàng</h5>
-                        <div class="cart-addr-left col-10" style="float: left;">
-                            <p>Nguyễn Thị Lài (+84) 972 649 403</p>
-                            <p>K65/H25 Phạm Như Xương, Phường Hòa khách Nam, Quận Liên Chiểu, Đà Nẵng</p>
-                        </div>
 
-                        <div class="cart-addr-right col-2 " style="float: right;">
-                            <button data-toggle="modal" data-target="#exampleModalAddr">+ Thay đổi địa chỉ</button>
-                        </div>
+                        <h5 style="float: right; padding-right: 5%;" class="text-info"><i
+                                class="fas fa-truck "></i> ĐANG GIAO
+                        </h5>
+
                     </div>
-                    <div class="clear"></div> <hr style="background-color:red;">
-
                     <div class="cart-produc col-12">
-                        <!-- <i class="fab fa-map-marker-alt"></i> <h5>Sản phẩm</h5> -->
-                        <table id="cart" class="table table-hover table-condensed">
+                        <table id="cart" class="table  table-condensed">
                             <thead>
                                 <tr>
                                     <th style="width:60%">Sản phẩm</th>
-                                    <th style="width:10%">Giá</th>
                                     <th style="width:10%">Số lượng</th>
-                                    <th style="width:20%" class="text-center">Thành tiền</th>
+                                    <th style="width:30%" class="text-center">Thành tiền</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -161,7 +152,6 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Price">200.000 <span style="color:darkgrey"> Vnđ</span></td>
                                     <td data-th="Quantity" class="text-center">1</td>
                                     <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000 <span
                                             style="color:darkgrey"> Vnđ</span></td>
@@ -180,186 +170,46 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td data-th="Price">200.000 <span style="color:darkgrey"> Vnđ</span></td>
                                     <td data-th="Quantity" class="text-center">1</td>
                                     <td data-th="Subtotal" style="text-align: center; color: #EA4335">200.000 <span
                                             style="color:darkgrey"> Vnđ</span></td>
                                 </tr>
 
                             </tbody>
-                            <!-- <tfoot>
+
+                            <tfoot>
                                 <tr>
-                                    <td>
-                                        <div class="row">
-                                            <div class="col-sm-3 hidden-xs">Lời nhắn:
-                                            </div>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" type="text" placeholder="Lưu ý cho Shop">
-                                            </div>
-                                        </div>
+                                    <td><br>
+                                        <p style="color: cadetblue;"><i>Bạn sẽ nhận được hàng sau 2 đến 3 ngày đặt hàng, vui lòng bấm "Đã nhận hàng" sau khi bạn nhận được hàng</i></p>
                                     </td>
+                                    <td colspan="1" class="hidden-xs"> </td>
 
                                     <td>
-                                            <div class="row">
-                                                <div class="col-sm-3 hidden-xs">Đơn vị vận chuyển:
-                                                </div>
-                                                <div class="col-sm-9">
-                                                    <input class="form-control" type="text" placeholder="Lưu ý cho Shop">
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                    <td colspan="2" class="hidden-xs"> </td>
-                                    <td class="hidden-xs text-left"><strong>Tổng tiền: 500.000 đ</strong>
+                                        <p class="billSuccess"><strong>Tổng thanh toán: 400.000 </strong><span  style="color:darkgrey">
+                                                Vnđ</span></p>
+                                        <button class="btn btn-info" style="width: 47%;">Đã nhận hàng
+                                        </button>
+                                       <a href="Detail-Order-success.html"> <button class="btn btn-info" >Xem chi tiết đơn hàng
+                                        </button></a>
                                     </td>
                                 </tr>
-                            </tfoot> -->
+                            </tfoot>
+
                         </table>
                     </div>
-                    <div class="clear"></div> <hr style="background-color:red;">
-                    <div class="cart-sent col-12">
-                            <div class="cart-addr-left col-4" style="float: left;">
-                                    <h5>Lời nhắn</h5>
-                                    <textarea type="text" class="form-control" placeholder="Lưu ý cho Shop"></textarea>
-                            </div>
-    
-                            <div class="cart-addr-right col-4 " style="float: left;">
-                                    <h5><i>Đơn vị vận chuyển</i></h5>
-                                    <p>Nhận được ngay sau 1 đến 2 ngày mua hàng</p>
-                                    <div class="vanchuyen-left col-6"  style="float: left;">
-                                        <p>Giao hàng tiết kiệm:</p>
-                                    </div>
-                                    <div class="vanchuyen-right col-6" style="float: left;" >
-                                            <p><strike>30.000 vnđ</strike><strong style="color: #EA4335;">    0 vnđ</strong></p>
-                                                
-                                    </div>
-                            </div>
-                            <div class="cart-addr-right col-4 " style="float: left;">
-                                   <p><i>Tổng tiền hàng: 400.000 <span style="color:darkgrey"> Vnđ</span></i></p>
-                                   <p><i>Phí vận chuyển:  0.0<span style="color:darkgrey"> Vnđ</span></i></p>
-                                    <p class="sumbill"><strong>Tổng thanh toán: 800.000  </strong><span style="color:darkgrey"> Vnđ</span></p>
-                                </div>
-
-                    </div>
-                    <div class="clear"></div> <hr style="background-color:red;">
-                    <div class="cart-thanhtoan col-12"> 
-                            <h5>Phương thức thanh toán: </h5>
-
-                            <div class="cart-thanhtoan-left " style="float: left;">
-                                   <button type="button" class="btn btn-info">Thẻ tín dụng/Ghi nợ</button>
-                                   <button type="button" class="btn btn-info">Thẻ ATM nội địa(Internet Banking)</button>
-                                   <button type="button" class="btn btn-secondary" disabled>Thanh toán khi nhận hàng</button>
-                             
-                            </div>
-                            <div class="cart-thanhtoan-right " style="float: right;">
-                                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalPhieuThanhToan">Đặt hàng ngay</button>
-                             </div>
-                    </div>
-                    <div class="clear"></div> <hr style="background-color:red;">
+                    <div class="clear"></div>
+                    <hr style="background-color:red;">
+                    <a href="Index.html" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp tục mua hàng</a>
+                    <div class="clear"></div>
                 </div>
 
             </div>
         </div>
     </div>
 
- <!-- Thêm địa chỉ giao hàng -->
-    <div class="modal fade" id="exampleModalAddr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true" style="z-index: 10000">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 style="color: #EA4335; font-family: 'Courier New', Courier, monospace;">Infinity</h5>
-                    <h5 class="modal-title" id="exampleModalLabel">Thêm địa chỉ mới</h5>
-                    <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close"
-                        style="z-index: 100">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Tên">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Số điện thoại">
-                        </div>
-                        <div class="form-group">
-                            <select class="form-control" name=Tinh>
-                                <option value=”0″>Chọn tỉnh/thành phố</option>
-                                <option value=”1″>An Giang</option>
-                                <option value=”2″>Bà Rịa - Vũng Tàu</option>
-                                <option value=”3″>Bắc Kạn</option>
-                                <option value=”4″>Bắc Giang</option>
-                                <option value=”5″>Bạc Liêu</option>
-                                <option value=”6″>Bắc Ninh</option>
-                                <option value=”7″>Bến Tre</option>
-                                <option value=”8″>Bình Dương</option>
-                                <option value=”9″>Bình Định</option>
-                                <option value=”10″>Bình Phước</option>
-                                <option value=”11″>Bình Thuận</option>
-                                <option value=”12″>Cao Bằng</option>
-                                <option value=”13″>Đà Nẵng</option>
-                                <option value=”14″>Đắk Lắk</option>
-                                <option value=”15″>Đắk Nông</option>
-                                <option value=”16″>Điện Biên</option>
-                                <option value=”17″>Đồng Nai</option>
-                                <option value=”18″>Đồng Tháp</option>
-                                <option value=”19″>Gia Lai</option>
 
 
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Quận / Huyện">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phường / Xã">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Tòa nhà, tên đường">
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Đặt làm địa chỉ mặc định</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Trở
-                        lại</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Hoàn Thành</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
- <!-- Phiếu thanh toán -->
-    <div class="modal fade" id="exampleModalPhieuThanhToan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true" style="z-index: 10000">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 style="color: #EA4335; font-family: 'Courier New', Courier, monospace;">Infinity Shop cảm ơn quý khách hàng</h5>
-                
-                <button type="button " class="btn btn-sm btn-danger" data-dismiss="modal" aria-label="Close"
-                    style="z-index: 100">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>Bạn đã thanh toán thành công cho đơn hàng #Ma09403</p>
-                <p>Vui lòng chờ nhận hàng trong 1 đến 2 ngày tới</p>
-               
-            </div>
-            <div class="modal-footer">
-              
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Trở
-                    lại</button>
-            </div>
-        </div>
-    </div>
-</div>
     <br>
     </div>
     <!--/body-->
