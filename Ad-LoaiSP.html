@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ad-Loại sản phẩm</title>
+    <link href="Admin/sidebar.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="Admin/style-admin.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/686e38e854.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <div class="logo"><a href="Index.html">
+                        <span>Infinity Shop</span></a></div>
+                <ul>
+                    <li><a href="Admin.html"><i class="fas fa-home"></i> Tổng quan </a>
+                    </li>
+
+                    <li><a href="Ad-produc.html" class=""><i class="fas fa-shopping-cart"></i>Sản phẩm</a>
+                        <!-- <ul>
+                            <li><a href="Ad-produc.html">Nhập hàng</a></li>
+                            <li><a href="Ad-produc.html">Điều chỉnh, giảm giá</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a href="Ad-hangSX.html"><i class="fas fa-handshake"></i>Nhà sản xuất<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-newspaper"></i>Tin tức, bài viết<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Tạo bài viết mới</a></li>
+                            <li><a href="">Tổng hợp bài viết</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-user-friends"></i>Quản lý nhân viên
+                            <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+                    <li><a class="sidebar-sub-toggle"><i class="fas fa-chart-bar"></i>Báo cáo<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="">Báo cáo doanh thu</a></li>
+                            <li><a href="">..</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Feedback.html"><i class="fas fa-comments"></i>Phản hồi đánh giá<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+
+                        <ul>
+
+                            <li class="header-icon dib"><i class="fas fa-street-view"
+                                    title="Xem với tư cách khách hàng"></i>
+                            </li>
+                            <li class="header-icon dib"><i class="fas fa-bell" title="Thông báo mới"></i>
+                            </li>
+                            <li class="header-icon dib"><span class="user-avatar">Admin <i
+                                        class="fas fa-sort-down"></i></span>
+                                <div class="drop-down dropdown-profile">
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li><a href="#"><i class="fas fa-user"></i> <span>Tài khoản của
+                                                        tôi</span></a></li>
+                                            <li><a href="#"><i class="fas fa-cogs"></i> <span>Cài đặt</span></a></li>
+                                            <li><a href="#"><i class="fas fa-sign-out-alt"></i> <span>Đăng
+                                                        xuất</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu-container -->
+    <div class="clear"></div>
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <!-- /# row -->
+                <div class="ad-product">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Thêm loại sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Danh sách </a>
+                        </li>
+
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- begin Nhập loại -->
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="ad-product-new">
+                                <div class=" border">
+                                    <div class="title">
+                                        <h5>Thông tin cơ bản</h5>
+                                    </div>
+                                    <div class="body-loaiSP">
+                                        <form>
+                                            <div class="form-group row col-12">
+                                                <label class="col-2 col-form-label">Tên loại
+                                                    sản phẩm : </label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" minlength="2"
+                                                        minlength="120">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row col-12">
+                                                <label class="col-2 col-form-label">Thuộc danh mục: </label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-control" id="exampleFormControlSelect1">
+                                                        <option>Điện thoại</option>
+                                                        <option>LapTop</option>
+                                                        <option>Phụ kiện</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row col-12">
+                                                    <label class="col-2 col-form-label">Hãng sản xuất: </label>
+                                                    <div class="col-sm-9">
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Apple</option>
+                                                            <option>Sory</option>
+                                                            <option>Samsung</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            <br>
+                                            <div class="form-group row col-12">
+                                                <label class="col-sm-2 col-form-label">Thông số cần thiết:</label>
+                                            </div>
+
+                                            <div class="row-loaisp row col-9" style="float: left;">
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+
+                                            <div class="row-loaisp row col-9" style="float: left;">
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" />
+                                                </div>
+                                            </div>
+
+
+                                            <div class="btn-add-lsp " style="float: right;">
+                                                <button type="button" class="btn btn-default border" title="Thêm"><i
+                                                        class="fas fa-plus"></i></button>
+                                                <button type="button" class="btn btn-default border" title="Xóa"><i
+                                                        class="fas fa-minus"></i></button>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                </hr>
+                                <div class="clear"></div>
+                                <div class="ht">
+                                    <button type="reset" class="btn btn-danger"><i class="fas fa-trash-alt"></i>
+                                        Hủy</button>
+                                    <button type="submit" class="btn btn-info"><i class="fas fa-save"></i> Hoàn
+                                        thành</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- begin danh sách -->
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="sale-product">
+                                <div class="border">
+                                    <br>
+                                    <div class="container">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col" width="20%">Loại sản phẩm</th>
+                                                    <th scope="col" width="20%">Thuộc danh mục</th>
+                                                    <th scope="col" width="15%">Hãng sản xuất</th>
+                                                    <th scope="col">Thông số sản phẩm cần thiết</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Laptop</td>
+                                                    <td>Laptop</td>
+                                                    <td>Apple</td>
+                                                    <td>CPU, RAM, Ổ cứng, Màn hình, Card màn hình, Cổng kết nối, hệ điều
+                                                        hành, Thiết kế, Kích thước</td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Đồng hồ thông minh</td>
+                                                    <td>Phụ kiện</td>
+                                                    <td>Apple</td>
+                                                    <td>Công nghệ màn hình, Kích thước màn hình, Hệ điều hành, Chất liệu
+                                                        mặt, Đường kính mặt, Kết nối, Ngôn ngữ, Tiện ích</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Tai nghe nhét tai trong</td>
+                                                    <td>Phụ kiện</td>
+                                                    <td>Sony</td>
+                                                    <td>Tương thích, Jack cắm, Độ dài dây, Kết nối cùng lúc, Phím điều
+                                                        khiển, Thương hiệu của, Sản xuất tạis</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- </div> -->
+
+
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery vendor -->
+    <script src="js/jquery.min.js"></script>
+    <script src="admin/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="Admin/sidebar.js"></script>
+    <!-- sidebar -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Admin/scripts.js"></script>
+
+</body>
+
+</html>

@@ -455,3 +455,20 @@ select{
   margin: 20px 5px 20px 0px; 
   width: 100%;
 }
+/*-----------------loại sản phẩm-------------------------*/
+.body-loaiSP{
+  padding-left: 4%;
+  margin: 20px 5px 20px 0px; 
+  /* width: 100%; */
+}
+.row-loaisp{
+
+  margin-left: 15%;
+  margin-bottom: 10px;
+  margin-top: 0px;
+
+}
+.btn-add-lsp{
+  float: right;
+  margin-right: 13%;
+}
